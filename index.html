@@ -5,9 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Application</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Test Application</h1>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quasi expedita non sit cumque accusantium ducimus beatae explicabo, molestias consectetur qui nam aperiam ratione adipisci doloribus temporibus natus! Eius, odit?</p>
+  <svg viewBox="0 0 600 300">
+    <!-- Symbol-->
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="50%" dy=".35em">AGolomazov</text>
+    </symbol>
+    <!-- Duplicate symbols-->
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+  </svg>
 </body>
 </html>
